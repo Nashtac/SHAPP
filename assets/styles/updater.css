@@ -1,6 +1,6 @@
  @font-face {
-  font-family:"RaiderPHB";
-  src: url("raidercrusader.ttf") format("truetype");
+  font-family:"CalligraffittiNash";
+  src: url("Calligraffitti-Regular.ttf") format("truetype");
 }
 
 .gradiente {
@@ -9,8 +9,8 @@
     left: -50px;
     width: 500px;
     padding-top: 35px;
-    font-family: 'RaiderPHB';
-    background: -webkit-linear-gradient(top,#ffffff, #9a9aa2);
+    font-family: 'CalligraffittiNash';
+    background: -webkit-linear-gradient(top,#ffffff, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -18,7 +18,7 @@
 .gradientesombra {
     /* padding-top: 10px; */
     text-shadow: #000000b3 0.1em 0.1em 0.2em;
-    font-family: 'RaiderPHB';
+    font-family: 'CalligraffittiNash';
     background: -webkit-linear-gradient(top,#f6f6f6, #8e8c8c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -29,7 +29,7 @@
     display: block;
     width: 100%;
     z-index: 999999;
-    background: #707097;
+    background: linear-gradient(45deg, #2d326ff5, #382a48);
 }
 
 .updater .logo {
@@ -44,7 +44,7 @@
 
 .updater .version {
     position: absolute;
-    font-family: 'RaiderPHB';
+    font-family: 'CalligraffittiNash';
     text-align: center;
     width: 100%;
     bottom: 105px;
@@ -69,12 +69,12 @@
 .updater .body .progression {
     text-align: center;
     color: white;
-    font-family: 'RaiderPHB';
+    font-family: 'CalligraffittiNash';
     font-size: 50px;
 }
 
 .updater .body .duck {
-    background: url('../images/grafxloading.png')no-repeat;
+    background: url('../images/logosura.png')no-repeat;
     background-size: 400px;
     opacity: 0.8;
     width: 400px;

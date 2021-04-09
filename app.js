@@ -4,12 +4,12 @@ try {
 
 	const path = require('path');
 	const url = require('url');
-	const client = require('discord-rich-presence')('766910758751567902');
+	const client = require('discord-rich-presence')('824123075071049758');
 
 	let pluginName;
 	let mainWindow;
 
-	app.setAsDefaultProtocolClient('grafx');
+	app.setAsDefaultProtocolClient('SuraHotel');
 /// windows
 
 
@@ -96,7 +96,7 @@ switch (process.platform) {
 
 
 // Open the DevTools.
-  //mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   // Protocol handler for win32
   if (process.platform == 'win32') {
@@ -162,7 +162,7 @@ switch (process.platform) {
        	let checkUrl = splitUrl[0];
        	if (url.replace('https://', '').startsWith('www.') || url.replace('https://', '').startsWith('swf.')) checkUrl = splitUrl[1];
 
-       	if (checkUrl !== 'habbografx') {
+       	if (checkUrl !== 'surahotel') {
        		e.preventDefault();
        		require('electron').shell.openExternal(url);
        	}
@@ -192,7 +192,7 @@ switch (process.platform) {
    });
 
    autoUpdater.on('checking-for-update', () => {
-   	mainWindow.webContents.executeJavaScript(`console.log("checkappp")`)
+   	mainWindow.webContents.executeJavaScript(`console.log("checkapp")`)
    	sendWindow('checking-for-update', '');
    });
    autoUpdater.on('update-available', () => {
@@ -217,7 +217,7 @@ switch (process.platform) {
    	});
    });
    autoUpdater.on('update-downloaded', () => {
-   	sendWindow('update-downloaded', 'Atualização baixada');
+   	sendWindow('update-downloaded', 'Actualización descargada');
    	autoUpdater.quitAndInstall();
    });
 

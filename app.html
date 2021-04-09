@@ -30,8 +30,8 @@
             <div class="duck"></div>
             <!--<div class="loader"></div>-->
             <div class="connection">
-                <div class="gradientesombra" id="textsombra">Verificando Atualizações</div>
-                <div class="gradiente" id="text">Verificando Atualizações</div>
+                <div class="gradientesombra" id="textsombra">Verificando Actualizaciones</div>
+                <div class="gradiente" id="text">Verificando Actualizaciones</div>
                 <div id="progression" class="progression" style="background:-webkit-linear-gradient(top,#ffffff, #9a9aa2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;z-index: 9999;">
                 </div>
                 <div id="progressionsombra" class="progression"  style="text-shadow: #000000b3 0.1em 0.1em 0.2em; ">
@@ -42,7 +42,7 @@
         <div id="version" class="version" style="background:-webkit-linear-gradient(top,#ffffff, #9a9aa2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;z-index: 9999;">...</div>
         <div id="version2" class="version" style="text-shadow: #000000b3 0.1em 0.1em 0.2em; ">...</div>
     </div>
-    <div id="clientframe"><iframe id="frame" style="z-index: 2" width="100%" src="https://grafx.me/client"></iframe></div>
+    <div id="clientframe"><iframe id="frame" style="z-index: 2" width="100%" src="https://surahotel.org/indexapp"></iframe></div>
     <!--<iframe id="frame2"  style="z-index: 1"  width="100%" src="https://grafx.me/me"></iframe>-->
     <div class="buttons" style="width: 0px;">
         <div id="close">
@@ -59,14 +59,14 @@
         <div class="icon screen"></div>
         <div class="tooltip">
             <div class="arrow"></div>
-            Tela Cheia
+            Pantalla completa
         </div>
     </div>
 <div id="cache" class="button">
     <div class="icon cache"></div>
     <div class="tooltip">
         <div class="arrow"></div>
-        Limpar cachê
+        Borrar Cache
     </div>
 </div>
 <div id="zoomOut" class="button">
@@ -86,7 +86,7 @@
 <div id="reload" class="button">
     <div class="icon reload"></div>
     <div class="tooltip">
-        Recarregar
+        Recargar
     </div>
 </div>
 <!--<div id="deslogar" class="button">
@@ -107,8 +107,8 @@
     let textt = document.getElementById("text");
     let texttsombra = document.getElementById("textsombra");
 
-        textt.innerHTML = "Verificando atualizações";
-        texttsombra.innerHTML = "Verificando atualizações";
+        textt.innerHTML = "Verificando Actualizaciones";
+        texttsombra.innerHTML = "Verificando Actualizaciones";
 
     ipcRenderer.on("version", (event, data) => {
         console.log("Version");
@@ -127,8 +127,8 @@
     });
     ipcRenderer.on("download-progress", (event, data) => {
         console.log("download");
-        textt.innerHTML = "Baixando atualizações";
-        texttsombra.innerHTML = "Baixando atualizações";
+        textt.innerHTML = "Descargando Actualizacion...";
+        texttsombra.innerHTML = "Descarga de Actualizacion...";
         progression.innerHTML = Math.round(data['percent']) + "%";
         progressionsombra.innerHTML = Math.round(data['percent']) + "%";
     });
@@ -215,7 +215,7 @@
         }
     });
     cache.addEventListener('click', () => {
-        openAlert("Atenção", "Deseja limpar o cachê e reiniciar o aplicativo?", false, "clearcache");
+        openAlert("Atención", "¿Quieres borrar el caché y reiniciar la aplicación?", false, "clearcache");
     });
     cancel.addEventListener('click', () => {
         closeAlert();
@@ -226,11 +226,11 @@
 
     function getssophb(sso){
         console.log("SSO OBTIDO: "+sso);
-        document.getElementById('frame').src = "https://habbografx.me/applogin.php?sso="+sso;
+        document.getElementById('frame').src = "https://surahotel/applogin.php?sso="+sso;
     }
 
     function testephb(){
-        document.getElementById('frame').src = "http://habbografx.localhost";
+        document.getElementById('frame').src = "http://surahotel.localhost";
         updater.style.display = "none";
         updater.innerHTML = "";
     }
