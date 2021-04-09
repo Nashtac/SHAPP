@@ -196,7 +196,7 @@ switch (process.platform) {
    	sendWindow('checking-for-update', '');
    });
    autoUpdater.on('update-available', () => {
-   		mainWindow.webContents.executeJavaScript(`console.log("updateapp")`)
+   		mainWindow.webContents.executeJavaScript(`console.log("updateappp")`)
    	sendWindow('update-available', '');
    });
    autoUpdater.on('update-not-available', () => {
