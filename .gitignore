@@ -3,7 +3,6 @@ dist/
 yarn.lock
 .idea
 package-lock.json
-package.json
 release
 electron-builder.yml
 .env
