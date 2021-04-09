@@ -1,2 +1,2 @@
-# HabboGrafxApp
- HabboGrafxApp For Windows, macOs & Linux.
+# SuraHotelAPP
+ SuraHotelAPP For Windows, macOs & Linux.
